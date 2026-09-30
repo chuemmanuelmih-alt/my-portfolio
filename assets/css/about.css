@@ -1,0 +1,313 @@
+.about-detail {
+    --about-ink: var(--text-color, #000);
+    --about-muted: #3f5052;
+    --about-accent: var(--main-color, blue);
+    --about-paper: var(--snd-bg-color, #d5fdf9);
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--about-paper);
+    color: var(--about-ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.about-page {
+    width: min(124rem, 100%);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 3.2rem clamp(2.4rem, 7vw, 9rem) 2.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-back {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .8rem 1.8rem .8rem 1rem;
+    border-radius: 4rem;
+    background: var(--about-accent);
+    box-shadow: 0 .6rem 1.8rem rgba(0, 0, 255, .2);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+    animation: about-rise .65s .05s both;
+}
+
+.about-back span {
+    display: grid;
+    width: 2.6rem;
+    height: 2.6rem;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 2rem;
+}
+
+.about-back:hover {
+    background: #0000c8;
+    box-shadow: 0 .8rem 2.2rem rgba(0, 0, 255, .3);
+    transform: translateX(-.3rem);
+}
+
+.about-back:focus-visible {
+    outline: .2rem solid var(--about-accent);
+    outline-offset: .3rem;
+}
+
+.about-hero {
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(28rem, .8fr);
+    align-items: center;
+    gap: clamp(4rem, 8vw, 11rem);
+    padding: 7rem 0 8rem;
+}
+
+.about-copy {
+    max-width: 68rem;
+    animation: about-rise .8s .15s both;
+}
+
+.about-eyebrow {
+    margin-bottom: 2.4rem;
+    color: var(--about-accent);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+}
+
+.about-eyebrow span {
+    color: #9ba29c;
+}
+
+.about-copy h1 {
+    max-width: 75rem;
+    overflow-wrap: anywhere;
+    font-family: inherit;
+    font-size: clamp(4.8rem, 8vw, 9.6rem);
+    font-weight: 700;
+    line-height: .98;
+}
+
+.about-period {
+    color: var(--about-accent);
+}
+
+.about-role {
+    margin-top: 1.8rem;
+    color: var(--about-muted);
+    font-family: inherit;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 600;
+}
+
+.about-divider {
+    width: 6rem;
+    height: .3rem;
+    margin: 3rem 0 2.6rem;
+    background: var(--about-accent);
+    transform-origin: left;
+    animation: about-line .8s .55s both;
+}
+
+.about-lead,
+.about-bio {
+    max-width: 62rem;
+    font-size: 1.65rem;
+    line-height: 1.8;
+}
+
+.about-lead {
+    color: var(--about-ink);
+    font-weight: 600;
+}
+
+.about-bio {
+    margin-top: 1.5rem;
+    color: var(--about-muted);
+}
+
+.about-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.6rem;
+    margin-top: 3.2rem;
+}
+
+.about-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.6rem;
+    min-height: 5.2rem;
+    padding: 0 2.2rem;
+    border-radius: 4rem;
+    background: var(--about-ink);
+    color: #fff;
+    font-size: 1.45rem;
+    font-weight: 600;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.about-cta:hover {
+    background: var(--about-accent);
+    transform: translateY(-.2rem);
+}
+
+.about-cta span {
+    font-size: 1.8rem;
+}
+
+.about-home-link {
+    padding: 1rem 0;
+    border-bottom: .1rem solid #aeb5af;
+    color: var(--about-ink);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.about-visual {
+    width: 100%;
+    max-width: 43rem;
+    justify-self: end;
+    animation: about-photo-in .9s .25s both;
+}
+
+.about-photo-frame {
+    position: relative;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border: .3rem solid var(--about-accent);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 2.5rem color-mix(in srgb, var(--about-accent) 35%, transparent);
+}
+
+.about-photo-frame::before {
+    position: absolute;
+    z-index: 0;
+    inset: -.9rem;
+    border: .2rem solid rgba(0, 0, 255, .14);
+    border-radius: 50%;
+    content: '';
+}
+
+.about-photo-frame img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-photo-caption {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    bottom: 2.2rem;
+    padding: .8rem 1.4rem;
+    background: var(--about-accent);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+    white-space: nowrap;
+    transform: translateX(50%);
+}
+
+.about-image-index {
+    margin-top: 1.6rem;
+    color: var(--about-muted);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-align: right;
+}
+
+.about-image-index span {
+    color: var(--about-accent);
+}
+
+.about-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 1.8rem;
+    border-top: .1rem solid #d9dbd4;
+    color: var(--about-muted);
+    font-size: 1.25rem;
+}
+
+.about-footer a {
+    color: var(--about-ink);
+    font-weight: 600;
+}
+
+.about-footer a span {
+    margin-left: .6rem;
+    color: var(--about-accent);
+}
+
+@keyframes about-rise {
+    from { opacity: 0; transform: translateY(1.8rem); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes about-photo-in {
+    from { opacity: 0; transform: translate(1.8rem, 1rem); }
+    to { opacity: 1; transform: translate(0, 0); }
+}
+
+@keyframes about-line {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+
+@media (max-width: 760px) {
+    .about-page {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        padding: 6rem 0;
+    }
+
+    .about-visual {
+        width: min(100%, 42rem);
+        justify-self: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-page {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .about-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-detail *,
+    .about-detail *::before,
+    .about-detail *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}

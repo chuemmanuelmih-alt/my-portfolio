@@ -1,0 +1,6 @@
+<?php
+require __DIR__ . '/includes/admin_bootstrap.php';
+$page_title = 'Services';
+$rows = $pdo->query('SELECT * FROM services ORDER BY sort_order, id')->fetchAll();
+require __DIR__ . '/includes/header.php';
+?><div class="page-actions"><p>Manage the services displayed on your public portfolio.</p><a class="btn" href="service_form.php">+ Add service</a></div><section class="panel"><div class="table-wrap"><table><thead><tr><th>Title</th><th>Order</th><th>Status</th><th>Updated</th><th>Actions</th></tr></thead><tbody><?php foreach ($rows as $row): ?><tr><td><strong><?= e($row['title']) ?></strong><small><?= e($row['short_description']) ?></small></td><td><?= (int)$row['sort_order'] ?></td><td><span class="badge <?= $row['is_active'] ? 'active' : 'archived' ?>"><?= $row['is_active'] ? 'Visible' : 'Hidden' ?></span></td><td><?= e($row['updated_at']) ?></td><td class="actions"><a href="service_form.php?id=<?= (int)$row['id'] ?>">Edit</a><a class="danger-link" data-confirm="Delete this service?" href="service_delete.php?id=<?= (int)$row['id'] ?>&token=<?= e(csrf_token()) ?>">Delete</a></td></tr><?php endforeach; ?></tbody></table></div></section><?php require __DIR__ . '/includes/footer.php'; ?>

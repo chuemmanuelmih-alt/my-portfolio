@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Web development service flyer</title>
+  <desc id="desc">A bold blue and aqua flyer promoting web development services.</desc>
+  <rect width="800" height="600" fill="#fff"/>
+  <path d="M0 0h800v170H0z" fill="#0000ff"/>
+  <path d="M0 170h800v430H0z" fill="#d5fdf9"/>
+  <text x="54" y="75" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">EMMANUEL DIGITAL STUDIO</text>
+  <text x="54" y="143" fill="#fff" font-family="Arial, sans-serif" font-size="64" font-weight="900">WEB</text>
+  <text x="225" y="143" fill="#d5fdf9" font-family="Arial, sans-serif" font-size="64" font-weight="900">DEVELOPMENT</text>
+  <text x="55" y="270" fill="#000" font-family="Arial, sans-serif" font-size="24" font-weight="700">BUILD YOUR NEXT</text>
+  <text x="55" y="315" fill="#0000ff" font-family="Arial, sans-serif" font-size="46" font-weight="900">DIGITAL EXPERIENCE</text>
+  <text x="56" y="358" fill="#000" font-family="Arial, sans-serif" font-size="19">Responsive websites  /  E-commerce  /  Web apps</text>
+  <text x="55" y="445" fill="#0000ff" font-family="Arial, sans-serif" font-size="20" font-weight="700">START A PROJECT  &gt;</text>
+  <text x="585" y="365" fill="#0000ff" font-family="Arial, sans-serif" font-size="76" font-weight="900">&lt;/&gt;</text>
+  <path d="M590 395h120" stroke="#0000ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M615 425h70" stroke="#000" stroke-width="8" stroke-linecap="round" opacity=".6"/>
+  <text x="680" y="555" fill="#0000ff" font-family="Arial, sans-serif" font-size="22" font-weight="900">01</text>
+</svg>

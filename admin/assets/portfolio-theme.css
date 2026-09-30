@@ -1,0 +1,179 @@
+:root {
+    --bg: #f7fffe;
+    --panel: #ffffff;
+    --panel2: #d5fdf9;
+    --line: rgba(0, 0, 255, 0.2);
+    --green: blue;
+    --muted: #52636d;
+    --danger: #b42332;
+    --white: #111820;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+}
+
+.sidebar {
+    background: blue;
+    border-right-color: rgba(255, 255, 255, 0.24);
+}
+
+.brand {
+    color: #ffffff;
+}
+
+.brand span {
+    color: var(--panel2);
+}
+
+.sidebar nav a,
+.logout {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    color: #0000c8;
+    background: var(--panel2);
+}
+
+.logout {
+    color: #ffe1e5;
+}
+
+.topbar {
+    background: blue;
+    border-bottom-color: #0000c8;
+}
+
+.topbar h1 {
+    color: #ffffff;
+}
+
+.admin-user {
+    color: #ffffff;
+}
+
+.admin-user i {
+    color: var(--panel2);
+}
+
+.stat-card,
+.panel,
+.form-panel,
+.message-card {
+    background: var(--panel);
+    border-color: var(--line);
+}
+
+.table-wrap th,
+td {
+    border-bottom-color: var(--line);
+}
+
+th {
+    color: var(--muted);
+}
+
+td {
+    color: var(--white);
+}
+
+.badge {
+    background: #eef3ff;
+    color: #18274f;
+}
+
+.badge.active,
+.badge.replied {
+    background: #d5fdf9;
+    color: #075b43;
+}
+
+.badge.new {
+    background: #fff3cc;
+    color: #765400;
+}
+
+.badge.archived {
+    background: #edf0f2;
+    color: #4c5961;
+}
+
+.btn {
+    background: blue;
+    color: #ffffff;
+}
+
+.btn.secondary {
+    background: var(--panel2);
+    color: #111820;
+}
+
+.filter-tabs a {
+    color: var(--muted);
+    border-color: var(--line);
+}
+
+.filter-tabs a.selected,
+.filter-tabs a:hover {
+    color: blue;
+    background: var(--panel2);
+}
+
+.form-grid label,
+.status-form label {
+    color: #26343c;
+}
+
+.form-grid small {
+    color: var(--muted);
+}
+
+input,
+textarea,
+select {
+    background: #ffffff;
+    color: #111820;
+    border-color: rgba(0, 0, 255, 0.24);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid rgba(0, 0, 255, 0.24);
+    border-color: blue;
+}
+
+.message-heading p,
+.message-meta,
+.message-meta a {
+    color: var(--muted);
+}
+
+.message-meta {
+    border-top-color: var(--line);
+    border-bottom-color: var(--line);
+}
+
+.message-meta a,
+.text-link,
+.actions a {
+    color: blue;
+}
+
+.flash {
+    background: var(--panel2);
+    color: #075b43;
+}
+
+.flash.error {
+    background: #fff0f1;
+    color: var(--danger);
+}
+
+.flash.success {
+    background: #d5fdf9;
+    color: #075b43;
+}

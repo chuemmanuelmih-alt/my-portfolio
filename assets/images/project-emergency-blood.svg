@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Emergency blood request system dashboard</title>
+  <desc id="desc">A clean blue and aqua mockup of a blood donation request management dashboard.</desc>
+  <defs>
+    <linearGradient id="panelBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#edfefe"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0a13ff"/>
+      <stop offset="100%" stop-color="#2ec7ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#fff7f7"/>
+  <rect width="1200" height="210" fill="#b10f1c"/>
+  <rect y="210" width="1200" height="590" fill="#ffe8e8"/>
+
+  <g transform="translate(80 105)">
+    <rect x="0" y="0" width="1040" height="590" rx="30" fill="url(#panelBg)" stroke="#f7c9cf" stroke-width="3"/>
+
+    <rect x="0" y="0" width="1040" height="82" rx="30" fill="#b10f1c"/>
+    <circle cx="42" cy="41" r="9" fill="#ffffff" opacity="0.9"/>
+    <circle cx="74" cy="41" r="9" fill="#ffffff" opacity="0.75"/>
+    <circle cx="106" cy="41" r="9" fill="#ffffff" opacity="0.55"/>
+    <text x="760" y="49" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Emergency Blood Care</text>
+
+    <rect x="26" y="118" width="262" height="420" rx="22" fill="#fff2f2" stroke="#f7d1d6"/>
+    <text x="44" y="156" fill="#b10f1c" font-family="Arial, sans-serif" font-size="24" font-weight="800">Quick Access</text>
+
+    <g>
+      <rect x="44" y="186" width="226" height="68" rx="16" fill="#ffe2e3"/>
+      <circle cx="76" cy="220" r="18" fill="#b10f1c"/>
+      <path d="M76 208c-7 0-12 6-12 13 0 8 12 19 12 19s12-11 12-19c0-7-5-13-12-13z" fill="#ffffff"/>
+      <text x="108" y="228" fill="#b10f1c" font-family="Arial, sans-serif" font-size="22" font-weight="700">Blood Request</text>
+    </g>
+
+    <g>
+      <rect x="44" y="274" width="226" height="68" rx="16" fill="#ffe2e3"/>
+      <circle cx="76" cy="308" r="18" fill="#ef3a48"/>
+      <text x="108" y="316" fill="#b10f1c" font-family="Arial, sans-serif" font-size="22" font-weight="700">Donor Match</text>
+    </g>
+
+    <g>
+      <rect x="44" y="362" width="226" height="68" rx="16" fill="#ffe2e3"/>
+      <circle cx="76" cy="396" r="18" fill="#ff5a5f"/>
+      <text x="108" y="404" fill="#b10f1c" font-family="Arial, sans-serif" font-size="22" font-weight="700">Urgent Cases</text>
+    </g>
+
+    <g>
+      <rect x="44" y="450" width="226" height="62" rx="18" fill="#ffd9dc"/>
+      <text x="58" y="489" fill="#b10f1c" font-family="Arial, sans-serif" font-size="22" font-weight="700">Need Help Now</text>
+      <rect x="198" y="467" width="54" height="26" rx="13" fill="#b10f1c"/>
+    </g>
+
+    <rect x="320" y="118" width="694" height="142" rx="22" fill="#fffaf9" stroke="#f7d1d6"/>
+    <text x="348" y="160" fill="#b10f1c" font-family="Arial, sans-serif" font-size="22" font-weight="700">Live dashboard</text>
+    <text x="348" y="208" fill="#170000" font-family="Arial, sans-serif" font-size="44" font-weight="900">2,846</text>
+    <text x="560" y="208" fill="#b10f1c" font-family="Arial, sans-serif" font-size="44" font-weight="900">Active donors</text>
+
+    <g>
+      <rect x="320" y="286" width="318" height="252" rx="22" fill="#fff1f2" stroke="#f7d1d6"/>
+      <text x="342" y="324" fill="#b10f1c" font-family="Arial, sans-serif" font-size="22" font-weight="700">Blood demand</text>
+      <rect x="342" y="352" width="262" height="132" rx="18" fill="#ffe8ea"/>
+      <rect x="356" y="433" width="26" height="32" rx="8" fill="#b10f1c"/>
+      <rect x="396" y="404" width="26" height="61" rx="8" fill="#ef3a48"/>
+      <rect x="436" y="398" width="26" height="67" rx="8" fill="#b10f1c"/>
+      <rect x="476" y="374" width="26" height="91" rx="8" fill="#ef3a48"/>
+      <rect x="516" y="345" width="26" height="120" rx="8" fill="#b10f1c"/>
+      <rect x="556" y="382" width="26" height="83" rx="8" fill="#ef3a48"/>
+    </g>
+
+    <g>
+      <rect x="666" y="286" width="348" height="252" rx="22" fill="#ffffff" stroke="#f7d1d6"/>
+      <text x="690" y="324" fill="#b10f1c" font-family="Arial, sans-serif" font-size="22" font-weight="700">Recent requests</text>
+      <rect x="690" y="345" width="300" height="52" rx="14" fill="#fff5f5"/>
+      <circle cx="714" cy="371" r="12" fill="#b10f1c"/>
+      <text x="736" y="378" fill="#0b0b0b" font-family="Arial, sans-serif" font-size="18" font-weight="700">O+ urgent - 12 units</text>
+      <rect x="690" y="408" width="300" height="52" rx="14" fill="#fff5f5"/>
+      <circle cx="714" cy="434" r="12" fill="#ef3a48"/>
+      <text x="736" y="441" fill="#0b0b0b" font-family="Arial, sans-serif" font-size="18" font-weight="700">A- needed - 08 units</text>
+      <rect x="690" y="471" width="300" height="52" rx="14" fill="#fff5f5"/>
+      <circle cx="714" cy="497" r="12" fill="#ff5a5f"/>
+      <text x="736" y="504" fill="#0b0b0b" font-family="Arial, sans-serif" font-size="18" font-weight="700">AB+ critical - 06 units</text>
+    </g>
+  </g>
+</svg>
